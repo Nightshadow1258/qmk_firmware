@@ -26,6 +26,5 @@ SPLIT_KEYBOARD = yes
 SERIAL_DRIVER = usart
 
 ENCODER_ENABLE = yes
-
 # alternative zum testen
 ENCODER_MAP_ENABLE = yes

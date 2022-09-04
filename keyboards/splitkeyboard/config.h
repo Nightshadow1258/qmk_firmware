@@ -15,7 +15,7 @@
 #define MATRIX_COL_PINS { B10, B11, B12, B13, B14, B3, B6 }
 
 /* COL2ROW or ROW2COL */
-#define DIODE_DIRECTION COL2ROW
+#define DIODE_DIRECTION ROW2COL
 
 /* define if matrix has ghost */
 //#define MATRIX_HAS_GHOST
@@ -59,8 +59,8 @@
 // Methode 1
 // #define SPLIT_HAND_PIN A5 // By default, if it's high, then the controller assumes it is the left hand, and if it's low, it's assumed to be the right side
 //Methode 2
-//#define MASTER_RIGHT
-#define MASTER_LEFT
+#define MASTER_RIGHT
+//#define MASTER_LEFT
 
 #define BACKLIGHT_PIN B5
 #define BACKLIGHT_LEVELS 5
@@ -71,10 +71,15 @@
 #define RGBLED_NUM 31    // Number of LEDs
 
 //Encoder Pins
-#define ENCODERS_PAD_A { A4 }
-#define ENCODERS_PAD_B { A5 }
+//left
+#define ENCODERS_PAD_A { A5 }
+#define ENCODERS_PAD_B { A4 }
+#define ENCODER_RESOLUTIONS { 4 }
+//right
+#define ENCODERS_PAD_A_RIGHT { A5 }
+#define ENCODERS_PAD_B_RIGHT { A4 }
+#define ENCODER_RESOLUTIONS_RIGHT { 4 }
 
-#define ENCODER_RESOLUTION 4
 // #define ENCODER_DEFAULT_POS 0x3
 // flip direction
 // #define ENCODER_DIRECTION_FLIP
