@@ -59,8 +59,8 @@
 // Methode 1
 // #define SPLIT_HAND_PIN A5 // By default, if it's high, then the controller assumes it is the left hand, and if it's low, it's assumed to be the right side
 //Methode 2
-#define MASTER_RIGHT
-//#define MASTER_LEFT
+//#define MASTER_RIGHT
+#define MASTER_LEFT
 
 #define BACKLIGHT_PIN B5
 #define BACKLIGHT_LEVELS 5
